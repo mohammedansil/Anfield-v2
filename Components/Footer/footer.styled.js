@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
-export const Section = styled.section`
+export const Section = styled.div`
 background-color: #171717;
 padding:100px 150px;
 color: #fff;
+width: 100%;
 @media (max-width:767px){
     padding: 30px;
 }
@@ -14,6 +15,7 @@ color: #fff;
 `
 export const Container = styled.div`
 display: flex;
+max-width: 1600px;
 flex-direction: column;
 @media (max-width:767px){
     flex-direction: column;

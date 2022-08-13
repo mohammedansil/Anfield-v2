@@ -57,32 +57,34 @@ export const Container = styled.div`
   align-items: center;
 `;
 export const Head = styled.div`
-  /* opacity: 1;
-width: 64px;
-height: 18px;
-transform: translate(-32px, -38px);
+  opacity: 1;
+  z-index:9;
+  background-color:#E61C29;
+padding:10px 10px;
+border-radius:5px;
 top: 100%;
-left: 50%; */
+left: 50%;
   color: #fff;
   @media (max-width: 768px) {
+    margin-bottom: 15px;
   }
 `;
 export const Title = styled.h1`
-  font-size: 54px;
+  font-size: 40px;
   color: #fff;
-  max-width: 75%;
-  text-align: center;
+  width: 75%;
+  z-index:9;
   @media (max-width: 768px) {
-    font-size: 35px;
-    width: 95%;
+    font-size: 25px;
+    width: 100%;
     font-weight: 600;
   }
 `;
 export const Description = styled.p`
-  font-size: 18px;
-  text-align: center;
+  font-size: 16px;
   margin-top: 15px;
-  max-width: 48%;
+  width: 48%;
+  z-index:9;
   line-height: 130%;
   color: #fff;
   @media (max-width: 768px) {
@@ -94,6 +96,7 @@ export const Buttons = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  z-index:9;
   @media screen and (max-width: 340px) {
     flex-direction: column;
   }
@@ -112,6 +115,9 @@ export const Button = styled.button`
   margin-top: 30px;
   font-weight: 500;
   font-size: 18px;
+  @media (max-width:767px){
+    margin-left: 0;
+  }
 `;
 export const ButtonTwo = styled.button`
   background: transparent;
@@ -170,7 +176,17 @@ export const NextArrow = styled(GrNext)`
 export const Image = styled.img`
   width:100vw;
   height: 100vh;
-  position: relative;
-  z-index: 999;
+  position: absolute;
+  z-index:0;
+  top: 0;
+  left: 0;
   object-fit: cover;
+`
+export const Contents = styled.div`
+position: relative;
+z-index:999;
+display: flex;
+width: 80%;
+flex-direction: column;
+align-items: flex-start;
 `

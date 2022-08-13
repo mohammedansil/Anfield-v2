@@ -1,8 +1,5 @@
 import styled from "styled-components";
-const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
-    ssr: false,
-  });
-  import dynamic from "next/dynamic";
+
 export const Section = styled.div`
 background-image:url("../../../images/Sports.png");
 background-repeat:no-repeat;
@@ -19,6 +16,7 @@ padding: 20px 175px;
 display: flex;
 flex-direction: row;
 align-items: center;
+justify-content:space-between;
 height: 100%;
 @media (max-width:768px){
     padding: 30px;
@@ -74,10 +72,10 @@ export const Button = styled.button`
 font-size:16px;
 background-color:#00B11D;
 border-radius:10px;
-width: 100%;
+width: 60%;
 border:none;
 color: #fff;
-height:77px;
+height:50px;
 @media (max-width:768px){
     font-size:13px;
     width: 50%;
@@ -110,9 +108,9 @@ export const Image = styled.img`
 export const SliderDiv = styled.div`
     
 `
-export const SliderCarousel = styled(OwlCarousel)`
-padding:50px;
-width: 1000px !important;
-height: 300px !important;
-object-fit: cover !important;
-`
+// export const SliderCarousel = styled(OwlCarousel)`
+// padding:50px;
+// width: 1000px !important;
+// height: 300px !important;
+// object-fit: cover !important;
+// `

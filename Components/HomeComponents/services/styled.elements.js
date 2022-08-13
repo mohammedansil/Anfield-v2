@@ -3,12 +3,13 @@ import { GrPrevious, GrNext } from "react-icons/gr";
 
 export const Section = styled.div`
   margin-top: 0;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   cursor: grab;
   @media (max-width: 768px) {
@@ -176,8 +177,8 @@ export const NextArrow = styled(GrNext)`
    }
 `;
 export const Image = styled.img`
-    width: 50%;
-    height: 50%;
+    width: 500px;
+    height: 250px;
     object-fit: cover;
     @media (max-width: 768px) {
         width: 200px;

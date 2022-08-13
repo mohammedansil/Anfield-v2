@@ -6,6 +6,27 @@ const slides = [
     image:"/images/Group 47.png",
     id: '1',
   },
+  {
+    head:"Lorem ipsum dolor sit amet",
+    title: 'Neque Porro Quisquam Dolorem Ipsum',
+    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitsed',
+    image:"/images/Group 46.png",
+    id: '1',
+  },
+  {
+    head:"Lorem ipsum dolor sit amet",
+    title: 'Neque Porro Quisquam Dolorem Ipsum',
+    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitsed',
+    image:"/images/Group 48.png",
+    id: '1',
+  },
+  {
+    head:"Lorem ipsum dolor sit amet",
+    title: 'Neque Porro Quisquam Dolorem Ipsum',
+    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitsed',
+    image:"/images/Group 47.png",
+    id: '1',
+  },
   // {
   //   title: 'Sustainable Engineering Solutions',
   //   paragraph: 'Strive towards greater cost competitiveness and work towards continued Financial Performance.',
