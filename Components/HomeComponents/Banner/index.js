@@ -13,7 +13,8 @@ import {
   SliderIconContainer,
   PrevArrow,
   NextArrow,
-  IconCircle,
+  IconCircleRight,
+  IconCircleLeft,
   Contents
 } from "./banner.styled";
 import Link from "next/link";
@@ -52,8 +53,14 @@ function Home() {
           <Container key={index}>
           {index === current && (
             <>
-            <ImageDiv>
-              <Image src={slide.image} alt=""/>
+           
+            <ImageDiv> 
+             
+              <Image src={slide.image} alt=""/> 
+              <IconCircleLeft>
+                  {" "}
+                  <PrevArrow onClick={prevSlide} />
+                </IconCircleLeft>
               <Contents>
               <Head>{slide.head}</Head>
                 <Title>{slide.title}</Title>
@@ -64,17 +71,15 @@ function Home() {
                 </Buttons>
               </Contents>
               
-           
-            </ImageDiv>
-            <SliderIconContainer>
-                <IconCircle>
-                  {" "}
-                  <PrevArrow onClick={prevSlide} />
-                </IconCircle>
-                <IconCircle>
+           <IconCircleRight>
                   {" "}
                   <NextArrow onClick={nextSlide} />{" "}
-                </IconCircle>
+                </IconCircleRight>
+            </ImageDiv>
+            
+            <SliderIconContainer>
+                
+                
               </SliderIconContainer>
             </>
           )}

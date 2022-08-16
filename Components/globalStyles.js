@@ -58,9 +58,7 @@ select,
 a {
 -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-section{
-    max-width: 1600px;
-}
+
 img{
 height:100%;
 border-radius:10px;

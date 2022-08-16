@@ -153,16 +153,16 @@ justify-content: space-between;
 }
 `
 export const Button = styled.button`
-width: 100%;
+width: 650px;
+height: 77px;
 text-align: center;
-background-color:red;
+background-color:#E61C29;
 border:none;
 outline: none;
 color: #fff;
 font-weight: bold;
-font-size:20px;
+font-size:29px;
 border-radius:5px;
-padding: 20px 10px;
 margin-top: 50px;
 @media (max-width: 768px){
     width: 100%;

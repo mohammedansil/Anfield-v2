@@ -6,13 +6,13 @@ background-repeat:no-repeat;
 background-size:cover;
 background-position:center;
 color:white;
-height:60vh;
 @media(min-width:768px)and (max-width: 1367px){
- height: 60vh;  
+
 }
 `
 export const Container = styled.div`
-padding: 20px 175px;
+padding: 125px 175px;
+height: 712px;
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -32,7 +32,7 @@ height: 100%;
 
 `
 export const Services = styled.div`
-width: 40%;
+
 
 @media (max-width:768px){
     width: 100%;
@@ -42,7 +42,8 @@ width: 40%;
 }
 `
 export const Title = styled.h4`
-font-size: 16px;
+font-size: 29px;
+color: #00B11D;
 @media (max-width:768px){
     font-size:16px;
 }
@@ -51,7 +52,8 @@ font-size: 16px;
 }
 `
 export const Heading = styled.h1`
-font-size: 32px;
+font-size: 59px;
+width: 445px;
 @media (max-width:768px){
     font-size:32px;
 }
@@ -60,7 +62,8 @@ font-size: 32px;
 }
 `
 export const Description = styled.p`
-font-size: 16px;
+font-size: 32px;
+width: 530px;
 @media (max-width:768px){
     font-size:12px;
 }
@@ -69,13 +72,14 @@ font-size: 16px;
 }
 `
 export const Button = styled.button`
-font-size:16px;
+font-size:29px;
 background-color:#00B11D;
 border-radius:10px;
-width: 60%;
+width: 555px;
+height:77px;
 border:none;
 color: #fff;
-height:50px;
+margin-top: 41px;
 @media (max-width:768px){
     font-size:13px;
     width: 50%;

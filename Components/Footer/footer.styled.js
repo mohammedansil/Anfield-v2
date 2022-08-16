@@ -5,7 +5,7 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 export const Section = styled.div`
 background-color: #171717;
-padding:100px 150px;
+padding:100px 120px;
 color: #fff;
 width: 100%;
 @media (max-width:767px){
@@ -14,9 +14,8 @@ width: 100%;
 
 `
 export const Container = styled.div`
-display: flex;
-max-width: 1600px;
-flex-direction: column;
+margin-left: auto;
+margin-right:auto;
 @media (max-width:767px){
     flex-direction: column;
 }
@@ -24,8 +23,22 @@ flex-direction: column;
 
 `
 export const Description = styled.p`
-font-size:16px;
-text-align:center;
+font-size:31px;
+margin:10px 0;
+font-weight: 300;
+@media (max-width:767px){
+    font-size:12px;
+    margin-left: 0;
+    text-align: left;
+}
+@media(min-width:768px)and (max-width: 1367px){
+    font-size:20px;
+}
+`
+export const BannerDescription = styled.p`
+font-size:26px;
+width: 417px;
+height: 103px;
 margin:10px 0;
 @media (max-width:767px){
     font-size:12px;
@@ -37,9 +50,10 @@ margin:10px 0;
 }
 `
 export const AboutDescription = styled.p`
-font-size:16px;
-text-align:center;
+font-size:31px;
 width: 80%;
+position: absolute;
+top:215px;
 margin:10px 0;
 @media (max-width:767px){
     font-size:12px;
@@ -49,8 +63,20 @@ margin:10px 0;
 }
 `
 export const Head = styled.h1`
-font-size:25px;
+font-size:37px;
 text-align: center;
+margin-bottom: 20px;
+@media(max-width:767px){
+    font-size:20px;
+    margin-bottom: 0;
+    
+}
+@media(min-width:768px)and (max-width: 1367px){
+    font-size: 25px;
+}
+`
+export const BannerHead = styled.h1`
+font-size:48px;
 margin-bottom: 20px;
 @media(max-width:767px){
     font-size:20px;
@@ -84,7 +110,7 @@ export const NavItem = styled(motion.li)`
 `;
 
 export const NavLink = styled(Link)`
-  font-size: 16px;
+  font-size: 31px;
   font-weight: 400;
   letter-spacing: 0.5px;
   text-align: center;
@@ -102,6 +128,8 @@ export const NavLink = styled(Link)`
   
 `;
 export const NavLinkA = styled(motion.a)`
+font-size: 31px;
+font-weight: 300;
 @media (max-width:767px){
     font-size:13px;
     
@@ -155,6 +183,7 @@ margin-bottom: 50px;
 `
 export const FooterDiv = styled.div`
 display: flex;
+width: 1557;
 flex-direction: row;
 justify-content: space-between;
 @media (max-width:767px){
@@ -166,6 +195,7 @@ justify-content: space-between;
 `
 export const About = styled.div`
 display: flex;
+position: relative;
 flex-direction: column;
 align-items: center;
 margin-bottom: 50px;
@@ -180,16 +210,24 @@ width: 25%;
 }
 `
 export const Image = styled.img`
-width:100%;
-height:50%;
+width:314px;
+height:314px;
+object-fit: cover;
 `
 export const GButton = styled.div`
 background-color: #0EBC2A;
 border:2px solid #fff;
 border-radius:5px;
-padding: 20px 50px;
-position: relative;
-z-index:9;
+width: 346px;
+height:77px;
+position: absolute;
+right: 195px;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index:99;
+font-size: 29px;
+font-weight: 500;
 @media (max-width:767px){
     padding: 5px 20px;
     font-size: 13px;
@@ -197,15 +235,16 @@ z-index:9;
 `
 export const BannerDiv = styled.div`
 display: flex;
-background-color:#00B11D;
+overflow-y: hidden;
+background-color:rgba(0, 177, 29, 0.66);
 color: #fff;
-padding:50px 125px;
+padding-left: 123px;
+/* padding:50px 125px; */
 flex-direction: row;
 justify-content: space-between;
 align-items:center;
-height: 100%;
+height: 282px;
 margin-bottom: 50px;
-width: 100%;
 border-radius:5px;
 position: relative;
 @media (max-width: 768px){
@@ -232,6 +271,7 @@ text-align-last: left;
 }
 `
 export const RightContainer = styled.div`
+position: relative;
 @media(max-width: 768px){
     display: flex;
 flex-direction: column;
@@ -240,11 +280,13 @@ justify-content: flex-start;
 `
 export const ImagePost = styled.img`
 position: absolute;
-bottom: 10px;
+top: 0;
+object-fit: cover;
+
 right: 10px;
-width: 30%;
+width: 530.13px;
 z-index:0;
-height: 100%;
+height: 370.07px;
 @media (max-width: 768px){
     width: 50%;
     height: 50%;

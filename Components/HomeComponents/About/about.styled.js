@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Section = styled.section`
 padding:170px;
+padding-top: 200px;
 @media (max-width:767px){
     padding: 30px;
 }
@@ -32,11 +33,12 @@ flex-direction: column;
 }
 `
 export const RightContainer = styled.div`
-width: 50%;
+width: 45%;
 display: flex;
 flex-direction: column;
-height: 100%;
-justify-content: space-evenly;
+
+justify-content: space-between;
+align-items: flex-end;
 @media (max-width:767px){
     width: 100%;
     
@@ -55,7 +57,7 @@ align-items: center;
 background-color:#00B11D;
 border-radius: 5px;
 color: #fff;
-font-size: 16px;
+font-size: 29px;
 font-weight: normal;
 margin-bottom:28px;
 @media (max-width:767px){
@@ -67,7 +69,7 @@ margin-bottom:28px;
 
 `
 export const Heading = styled.h1`
-font-size:32px;
+font-size:59px;
 font-weight: bold;
 margin-top: 0;
 margin-bottom:47px;
@@ -79,9 +81,13 @@ margin-bottom:47px;
 }
 `
 export const Description = styled.p`
-font-size:16px;
+font-size:32px;
 margin-top: 0;
 font-weight: 500;
+line-height:42px;
+font-weight: normal;
+font-family: 'Segoe UI';
+width: 772px;
 margin-bottom:47px;
 @media (max-width:767px){
     font-size:12px;
@@ -90,11 +96,26 @@ margin-bottom:47px;
     font-size:20px;
 }
 `
-export const Button = styled.button`
-width: 180px;
-height:40px;
+export const P2 = styled.p`
+font-size:32px;
 margin-top: 0;
-font-size:16px;
+font-weight: 500;
+line-height:42px;
+font-weight: normal;
+margin-top:30px;
+width: 772px;
+@media (max-width:767px){
+    font-size:12px;
+}
+@media(min-width:768px)and (max-width: 1367px){
+    font-size:20px;
+}
+`
+export const Button = styled.button`
+width: 334px;
+height:77px;
+margin-top: 0;
+font-size:29px;
 color:#fff;
 background-color: #E61C29;
 border:none;
@@ -111,8 +132,8 @@ border-radius:10px;
 }
 `
 export const ImageDiv = styled.div`
-width:600px;
-height:200px;
+width:656px;
+height:244px;
 position: relative;
 display: flex;
 flex-direction: row;
@@ -129,8 +150,8 @@ align-items: center;
 
 `
 export const Image = styled.img`
-width:80%;
-height:80%;
+width:100%;
+height:100%;
 z-index: 0;
 object-fit: cover;
 @media (max-width:767px){
@@ -141,7 +162,7 @@ object-fit: cover;
 export const ImageTitle = styled.h4`
 position: absolute;
 color:white;
-font-size:20px; 
+font-size:29px; 
 @media (max-width:767px){
     font-size:20px;
 }

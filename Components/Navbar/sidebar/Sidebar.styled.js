@@ -13,6 +13,7 @@ export const SidebarContainer = styled.aside`
   background: #fff;
   top: 0;
   left: 0;
+  z-index:99999;
   transition: all 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};

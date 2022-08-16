@@ -4,14 +4,14 @@ import Link from "next/link";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 export const Nav = styled.nav`
-background:${({scrollNav}) =>(scrollNav ? '#fff' :'transparent')};
-  height: 80px;
+background:${({scrollNav}) =>(scrollNav ? '#fff' :'#fff')};
+  height: 119px;
   /* margin-top:-80px; */
   display:flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  position: fixed;
+  width: 100%;
   top: 0;
   right:0;
   left:0;
@@ -32,8 +32,8 @@ export const NavContainer = styled(motion.div)`
 `;
 
 export const Logo = styled(motion.img)`
-  width: 45px;
-  height: auto;
+  width: 314px;
+  height: 314px;
   max-height:100%;
   object-position:center;
   object-fit: cover;
@@ -59,7 +59,8 @@ export const NavItem = styled(motion.li)`
 `;
 
 export const NavLink = styled(Link)`
-  color: #000;
+  /* color: #000; */
+  
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -76,8 +77,13 @@ export const NavLink = styled(Link)`
   cursor: pointer;
 `;
 export const NavLinkA = styled(motion.a)`
+  /* color:${({scrollNav}) =>(scrollNav ? '#000' :'#fff')}; */
   color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  font-size: 29px;
 `;
 
 export const MobileMenu = styled(motion.div)`

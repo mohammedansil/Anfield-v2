@@ -10,6 +10,7 @@ import {
   ImageDiv,
   Image,
   ImageTitle,
+  P2
 } from "./about.styled";
 function index() {
   return (
@@ -20,19 +21,19 @@ function index() {
           <Heading>Neque Porro Dolorem Ipsum.</Heading>
           <Description>
             <p>
-              lorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit
-              amet, consectetur adiplorem ipsum dolor sit amet, consectetur
-              adiplorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor
-              sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur
-              adip
+            Lorem Ipsum is simply dummy text of the printing 
+standard dummy text ever since the 1500s, when an 
+make a type specimen book. It has survived not only 
+remaining essentially unchanged. It was popularised 
+Lorem Ipsum passages
             </p>
-            <p>
-              lorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit
-              amet, consectetur adiplorem ipsum dolor sit amet, consectetur
-              adiplorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor
-              sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur
-              adiplorem ipsum dolor sit amet, consectetur adip
-            </p>
+            <P2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of
+standard dummy text ever since the 1500s, when an 
+make a type specimen book. It has survived not only 
+remaining essentially unchanged. It was popularised 
+Lorem Ipsum passages
+            </P2>
           </Description>
           <Button>Lorem</Button>
         </LeftContainer>

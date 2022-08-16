@@ -14,7 +14,11 @@ import {
   Input,
   Inputs,
   Button,
-  Message
+  Message,
+  ContactImage,
+  Rating,
+  RatingText,
+  Stars
 } from "./contact.styled";
 import { BsFillTelephoneFill,BsFillEnvelopeOpenFill ,BsFacebook,BsInstagram,BsLinkedin,BsWhatsapp,BsTwitter} from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
@@ -52,6 +56,7 @@ function index() {
             <BsWhatsapp/>
             <BsLinkedin/>
           </SocialMediaIcons>
+          <ContactImage src="/images/Contact.png"/>
         </Contact>
 
         <Form>
@@ -64,8 +69,13 @@ function index() {
             <Input placeholder="Phone"/>
           </Inputs>
           <Message placeholder="Message"/>
-          <Button>Submit</Button>
+          <Rating>
+            <RatingText>Rate Our Services</RatingText>
+            <Stars src="images/Stars.png"/>
+          </Rating>
+          <Button>Send</Button>
         </Form>
+        
       </Container>
     </Section>
   );

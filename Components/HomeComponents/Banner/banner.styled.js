@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { GrPrevious, GrNext } from "react-icons/gr";
-
+import {BsFillArrowLeftSquareFill,BsFillArrowRightSquareFill} from "react-icons/bs"
 export const Section = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 806px;
   margin-top: 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,11 +56,16 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 `;
-export const Head = styled.div`
+export const Head = styled.h1`
   opacity: 1;
   z-index:9;
+  font-size:29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color:#E61C29;
-padding:10px 10px;
+width: 492px;
+height:56px;
 border-radius:5px;
 top: 100%;
 left: 50%;
@@ -70,7 +75,7 @@ left: 50%;
   }
 `;
 export const Title = styled.h1`
-  font-size: 40px;
+  font-size: 69px;
   color: #fff;
   width: 75%;
   z-index:9;
@@ -81,11 +86,11 @@ export const Title = styled.h1`
   }
 `;
 export const Description = styled.p`
-  font-size: 16px;
+  font-size: 33px;
   margin-top: 15px;
   width: 48%;
   z-index:9;
-  line-height: 130%;
+  line-height: 43px;
   color: #fff;
   @media (max-width: 768px) {
     width: 75%;
@@ -105,8 +110,8 @@ export const Button = styled.button`
   background: #E61C29;
   cursor: pointer;
   border:none;
-  width: 140px;
-  height: 42px;
+  width: 230px;
+  height: 77px;
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -114,24 +119,24 @@ export const Button = styled.button`
   margin-right: 15px;
   margin-top: 30px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 29px;
   @media (max-width:767px){
     margin-left: 0;
   }
 `;
 export const ButtonTwo = styled.button`
   background: transparent;
-  border: 2px solid #E61C29;
-  width: 140px;
+  border: 2px solid #fff;
+  width: 230px;
   cursor: pointer;
-  height: 42px;
+  height: 77px;
   border-radius: 5px;
-  color: #E61C29;
+  color: #fff;
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 30px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 29px;
 `;
 
 export const SliderIconContainer = styled.div`
@@ -145,15 +150,31 @@ export const SliderIconContainer = styled.div`
   align-items: center;
   margin-top: 1rem;
 `;
-export const IconCircle = styled.div`
-  background: #E61C29;;
-  border-radius: 50px;
+export const IconCircleLeft = styled.div`
+   background: #fff;
+  border:1px solid #fff;
+  border-radius: 10px;
   color: #fff;
   width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left:50px;
+`;
+export const IconCircleRight = styled.div`
+  background: #fff;
+  border:1px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right:50px;
 `;
 export const PrevArrow = styled(GrPrevious)`
   cursor: pointer;
@@ -167,6 +188,7 @@ export const NextArrow = styled(GrNext)`
   color: #fff;
   fill: #fff;
   font-size: 20px;
+
 
   & path {
     stroke: #fff;
@@ -184,7 +206,6 @@ export const Image = styled.img`
 `
 export const Contents = styled.div`
 position: relative;
-z-index:999;
 display: flex;
 width: 80%;
 flex-direction: column;

@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Section = styled.section`
 padding:170px;
+padding-top: 110px;
+background-color: #f7f7f7;
 @media (max-width:1367px){
     padding: 30px;
 }
@@ -32,7 +34,17 @@ flex-direction: column;
 }
 `
 export const Mission = styled.div`
-width: 100%;
+width: 733px;
+
+border-radius:28px;
+height: 656px;
+background-color: #fff;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 2px 22px -12px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0px 2px 22px -12px rgba(0, 0, 0, 0.5);
 `
 export const MissionVission = styled.div`
 display: flex;
@@ -46,18 +58,14 @@ justify-content: space-between;
 }
 `
 export const Title = styled.h4`
-width: 300px;
-height: 55px;
+
 display: flex;
 flex-direction: row;
-justify-content: center;
 align-items: center;
-background-color:#00B11D;
 border-radius: 5px;
-color: #fff;
-font-size: 16px;
-font-weight: normal;
-margin-bottom:28px;
+color: #00B11D;
+font-size: 30px;
+font-weight: 600;
 @media (max-width:1367px){
     font-size:16px;
 }
@@ -67,7 +75,7 @@ margin-bottom:28px;
 
 `
 export const Heading = styled.h1`
-font-size:32px;
+font-size:59px;
 font-weight: bold;
 margin-top: 0;
 margin-bottom:47px;
@@ -80,16 +88,19 @@ margin-bottom:47px;
 `
 export const Name = styled.h1`
 margin-bottom: 20px;
+text-align: left !important;
+font-size: 40px;
+color:#00B11D;
+width: 85%;
 @media (max-width:1367px){
     
 }
 `
 export const Para = styled.p`
-font-size:16px;
+font-size:27px;
 margin-top: 0;
 width:85%;
 font-weight: 500;
-margin-bottom:47px;
 @media (max-width:1367px){
     font-size:12px;
 }

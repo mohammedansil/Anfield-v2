@@ -19,7 +19,9 @@ import {
   FooterDiv,
   GButton,
   BannerDiv,
-  AboutDescription
+  AboutDescription,
+  BannerHead,
+  BannerDescription
 } from "./footer.styled";
 
 import Links from "../../pages/api/menuLinks";
@@ -33,10 +35,10 @@ function Footer() {
       <Container>
         <BannerDiv>
           <LeftContainer>
-            <Head>Neque Porro</Head>
-            <Description>Lorem ipsum dolor sit consectetur  
+            <BannerHead>Neque Porro</BannerHead>
+            <BannerDescription>Lorem ipsum dolor sit consectetur  
 amet adipiscing elitsed 
-</Description>
+</BannerDescription>
           </LeftContainer>
           <RightContainer>
             <GButton>Lorem</GButton>
@@ -45,7 +47,7 @@ amet adipiscing elitsed
         </BannerDiv>
         <FooterDiv>
            <About>
-            <Image src="/images/logo.png" alt="Logo"/>
+            <Image src="/images/LogoW.png" alt="Logo"/>
             <AboutDescription>Lorem ipsum dolor sit 
 consectetur Lorem
 </AboutDescription>

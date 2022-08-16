@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-padding:0px 170px 170px 170px;
+padding:173px 170px 170px 170px;
+
 @media (max-width:767px){
     padding: 30px;
 }
@@ -64,38 +65,40 @@ justify-content: center;
 export const Buttons = styled.div`
 display: flex;
 justify-content: space-between;
-width: 50%;
+width: 82%;
 @media (max-width:767px){
     width: 90%;
 }
 
 `
 export const WButton = styled.button`
-width: 50%;
-margin-left: 20px;
-height: 40px;
+font-size: 29px;
+width: 230px;
+height:77px;
 background-color:transparent;
 border:2px solid #fff;
 outline:none;
 color:#fff;
+margin-left: 24px;
 font-weight: bold;
 
 `
 export const BLButton = styled.button`
-width: 30%;
-margin-left: 20px;
-height: 40px;
+font-size: 31px;
+width: 312px;
+height:97px;
 background-color:transparent;
 border:2px solid lightgray;
 outline:none;
 color:#000;
-font-weight: bold;
+font-weight: 600;
 `
 export const RButton = styled.button`
-width: 50%;
+width: 230px;
+height:77px;
 border:none;
 color: #fff;
-height: 40px;
+font-size: 29px;
 background-color:#E61C29;
 outline:none;
 
@@ -113,20 +116,20 @@ background: rgb(180,126,193);
 background: linear-gradient(90deg, rgba(180,126,193,1) 0%, rgba(174,216,196,1) 100%);
 border-radius: 10px;
 margin-top: 30px;
-height: 300px;
-padding: 30px 0 0 30px ;
+width: 786px;
+height: 395px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 position: relative;
 `
 export const Title = styled.h4`
-width: 300px;
-height: 55px;
 display: flex;
-
-background-color:#fff;
 border-radius: 5px;
 color: #00B11D;
-font-size: 16px;
-font-weight: normal;
+font-size: 29px;
+font-weight: bold;
 @media (max-width:767px){
     font-size:16px;
 }
@@ -136,7 +139,7 @@ font-weight: normal;
 
 `
 export const Heading = styled.h1`
-font-size:32px;
+font-size:59px;
 font-weight: bold;
 margin-top: 0;
 margin-bottom:47px;
@@ -148,7 +151,7 @@ margin-bottom:47px;
 }
 `
 export const Name = styled.h1`
-
+font-size:48px;
 @media (max-width:767px){
     
 }
@@ -157,7 +160,7 @@ export const Name = styled.h1`
 }
 `
 export const Text = styled.h1`
-
+font-size:40px;
 @media (max-width:767px){
     font-size: 16px;
 }
@@ -169,7 +172,7 @@ export const Button = styled.button`
 }
 `
 export const Para = styled.p`
-font-size:16px;
+font-size:25px;
 margin-top: 0;
 font-weight: 500;
 @media (max-width:767px){
@@ -180,7 +183,7 @@ font-weight: 500;
 }
 `
 export const Description = styled.p`
-font-size:16px;
+font-size:33px;
 margin-top: 0;
 font-weight: 500;
 margin-bottom:47px;
@@ -192,14 +195,13 @@ margin-bottom:47px;
 }
 `
 export const Image = styled.img`
-width:100px;
-height:100px;
+width:147px;
+height:147px;
 background-color: #B0ACDB;
 padding: 20px;
 z-index: 0;
 @media (max-width:767px){
-    padding: 15px;
-    width: 20%;
-    height: 20%;
+    width: 99px;
+    height: 99px;
 }
 `

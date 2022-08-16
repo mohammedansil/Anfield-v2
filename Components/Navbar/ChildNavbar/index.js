@@ -38,7 +38,8 @@ const ChildNavbar = ({ toggle}) => {
     <Nav  scrollNav={scrollNav} >
       <NavContainer>
         <NavLink href="/">
-         <NavLinkA>{LogoValue === "text" ?<LogoText>Anfield.</LogoText> :<Logo src={LogoImage.src} alt="logo" />}</NavLinkA>
+         <NavLinkA><Logo src={LogoImage.src} alt="logo" /></NavLinkA>
+         {/* <NavLinkA>{LogoValue === "text" ?<LogoText>Anfield.</LogoText> :<Logo src={LogoImage.src} alt="logo" />}</NavLinkA> */}
         </NavLink>
         <MobileMenu onClick={toggle}>
           <MenuIcon />
