@@ -194,9 +194,9 @@ export const ContactImage = styled.img`
 margin-left: 333px;
 position: absolute;
 bottom: 0;
-right: 900px;
+right: 800px;
 width: 493.6px;
-z-index: 999;
+z-index: 9;
 height:404.75px;
 `
 export const Stars = styled.img`

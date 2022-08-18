@@ -225,7 +225,7 @@ right: 195px;
 display: flex;
 align-items: center;
 justify-content: center;
-z-index:99;
+z-index:9;
 font-size: 29px;
 font-weight: 500;
 @media (max-width:767px){
